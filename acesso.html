@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso</title>
+    <link type="text/css" rel="stylesheet" href="bootstrapCSS/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="bootstrapCSS/estilos.css" />
+</head>
+
+<header class="border-bottom border-dark bg-light text-dark p-3 mb-4  d-flex justify-content-between ">
+    <div class="fs-6">
+        <span><h6>Usuário atual: </h6></span>
+        <h6><span id="usuario" class ="text-danger"></span></h6>
+    </div>
+    <div>
+        <span>
+            <a href="index.html"><button>Sair</button></a>
+        </span>
+
+    </div>
+</header>
+
+<body class="d-flex flex-column min-vh-100" onload="carregar()">
+    <!-- <div>
+        <h1>Boa Tarde</h1>
+        <h2>pagina de acesso</h2>
+        <h3>teste</h3>
+        <a href="">teste2</a>
+        texto sem nada
+        <p>texto sem nada com p</p>
+        <img src="imgs/logoAOdinLine.png" alt="">
+    </div> -->
+    <h2 class="text-center">Menu de Acesso</h2>
+    <div class="d-flex justify-content-center align-items-center">
+        
+
+
+        <div class="card p-5 shadow" style="width: 100%; height: 100%;">
+
+            
+
+            <div class="d-flex flex-wrap justify-content-between align-items-center h-100">
+                <button type="button" id="button-alerta " class="btn btn-dark btn-lg flex-grow-1 m-2" onclick = "alerta()">Alerta de Preço
+                    <br><br><img src="imgs/alerta3.avif" alt="" height="100px" width="100px">
+                    <br>
+                    <br>
+                </button>
+                <button type="button" id="button-compras" class="btn btn-dark btn-lg flex-grow-1 m-2" onclick = "compras()">Minhas Compras
+                    <br><br><img src="imgs/compras1.jpg" alt="" height="100px" width="100px">
+                    <br>
+                    <br>
+                </button>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/2acesso.js"></script>
+</body>
+<footer class="mt-auto">
+    <div class="border-top border-dark text-center bg-light text-dark p-3 mt-4">
+        <p>Projeto: Matheus Henrique Almeida Silva</p>
+        <p>&copy; 2025 - Todos os direitos reservados</p>
+    </div>
+</footer>
+</html>

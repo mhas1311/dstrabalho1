@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerta de Preço</title>
+    <link type="text/css" rel="stylesheet" href="bootstrapCSS/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="bootstrapCSS/estilos.css" />
+</head>
+
+
+
+<header class="border-bottom border-dark bg-light text-dark p-3 mb-4 d-flex justify-content-between align-items-center">
+    <div class="justify-content-start">
+        <!-- <span class="border border-light rounded p-2">
+            <a href="alertaPreco.html" class="text-decoration-none text-light">Alerta de Preço</a>
+        </span> -->
+        <span class="border border-dark rounded p-2 fw-bold">
+            <a href="minhasCompras.html" class="text-decoration-none text-dark">Minhas compras</a>
+        </span>
+
+    </div>
+
+    <div>
+        <span>
+            <a href="index.html"><button>Sair</button></a>
+        </span>
+
+    </div>
+</header>
+
+<body class="d-flex flex-column min-vh-100" onload="carregar()">
+    <div class="container mt-1">
+        <h1 class="text-center f-1 border-bottom border-danger">Alerta de Preço</h1>
+        <div class="d-flex justify-content-center">
+            <div class="card p-4 shadow mt-4 bg-light" style="max-width: 90%; width: 100%;">
+                <form action="#" id="formulario">
+                    <fieldset>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="produto" class="form-label fw-bold">Produto</label>
+                                <select name="produto" id="produto" class="form-select" required>
+                                    <option value="0" disabled>Selecione o produto</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="valor" class="form-label fw-bold">Valor</label>
+                                <input type="number" id="valor" name="valor" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3 justify-content-center">
+                            <div class="col-md-8  ">
+                                <label for="acao" class="form-label fw-bold">Ação</label>
+                                <select name="acao" id="acao" class="form-select" required>
+                                    <option value="0" disabled>Selecione a ação</option>
+                                    <option value="1">Notificar</option>
+                                    <option value="2">Comprar</option>
+                                </select>
+                            </div>
+
+                            <div class="d-flex mt-5 justify-content-center">
+                                <button type="button" class="btn btn-danger btn-sm text-light fw-bold" id="start"
+                                    onclick="iniciar()">Confirmar</button>
+                            </div>
+
+                        </div>
+
+
+                    </fieldset>
+
+                </form>
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="js/3alertaPreco.js"></script>
+
+</body>
+
+
+
+
+
+
+
+
+
+<footer class="mt-auto">
+    <div class="border-top border-dark text-center bg-light text-dark p-3 mt-4">
+        <p>Projeto: Matheus Henrique Almeida Silva</p>
+        <p>&copy; 2025 - Todos os direitos reservados</p>
+    </div>
+</footer>
+</html>
