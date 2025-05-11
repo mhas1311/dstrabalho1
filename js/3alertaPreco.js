@@ -171,7 +171,7 @@ async function realizarCompra() {
                     $("#start").text("Start").removeClass("btn-danger").addClass("btn-success");
                     usuarioCompras.push(produtoSelecionado);
                     localStorage.setItem('usuarioCompras', JSON.stringify(usuarioCompras));
-                    window.location.href = "compras.html";
+                    window.location.href = "minhasCompras.html";
 
                 });
             }
