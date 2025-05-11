@@ -56,7 +56,7 @@ function visualizarProduto(id) {
 
     if (produto) {
         janelaFlutuante.find("h1").text(produto.descricao);
-        $("#espacoImg").attr("src", produto.urlImagem).attr("style", "width: 30%;");
+        $("#espacoImg").attr("src", produto.urlImagem).attr("style", "width: 50%;");
         janelaFlutuante.css("display", "flex");
     } else {
         alert("Produto não encontrado.");

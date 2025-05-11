@@ -65,13 +65,13 @@ function iniciar() {
         if (monitorando) {
             monitorando = false;
             clearTimeout(intervalId);
-            $("#start").text("Start").removeClass("btn-danger").addClass("btn-success");
+            $("#start").text("Buscar").removeClass("btn-danger").addClass("btn-success");
         } else {
 
             produto = $("#produto").val();
             valor = parseFloat($("#valor").val());
             monitorando = true;
-            $("#start").text("Stop").removeClass("btn-success").addClass("btn-danger");
+            $("#start").text("Cancelar").removeClass("btn-success").addClass("btn-danger");
             iniciarTemporizador();
         }
     } else if (acao == 2) {
@@ -79,13 +79,13 @@ function iniciar() {
         if (monitorando) {
             monitorando = false;
             clearTimeout(intervalId);
-            $("#start").text("Start").removeClass("btn-danger").addClass("btn-success");
+            $("#start").text("Buscar").removeClass("btn-danger").addClass("btn-success");
         } else {
 
             produto = $("#produto").val();
             valor = parseFloat($("#valor").val());
             monitorando = true;
-            $("#start").text("Stop").removeClass("btn-success").addClass("btn-danger");
+            $("#start").text("Cancelar").removeClass("btn-success").addClass("btn-danger");
             iniciarTemporizadorCompra();
         }
     }
@@ -117,8 +117,8 @@ async function alerta() {
 
                 Swal.fire({
                     icon: 'info',
-                    title: '🎉 Ótima notícia!',
-                    text: 'Produto abaixo ou igual ao valor desejado!',
+                    title: 'OPORTUNIDADE:',
+                    text: 'Produto ABAIXO ou IGUAL ao valor desejado!',
                     showCancelButton: true,
                     confirmButtonText: 'Comprar',
                     cancelButtonText: 'Continuar monitorando',
@@ -126,7 +126,7 @@ async function alerta() {
                     if (result.isConfirmed) {
                         monitorando = false;
                         clearTimeout(intervalId);
-                        $("#start").text("Start").removeClass("btn-danger").addClass("btn-success");
+                        $("#start").text("Buscar").removeClass("btn-danger").addClass("btn-success");
                         alert("Comprado com sucesso!");
                         usuarioCompras.push(produtoSelecionado);
                         localStorage.setItem('usuarioCompras', JSON.stringify(usuarioCompras));
@@ -137,14 +137,14 @@ async function alerta() {
             }
             else {
                 //remover depois
-                alert("Produto acima do valor desejado!");
+                alert("Produto ACIMA do valor desejado!");
             }
         } else {
-            alert("Produto não encontrado!");
+            alert("Produto NÃO encontrado!");
         }
 
     } catch (error) {
-        console.error('Erro ao buscar produtos:', error);
+        console.error('ERRO ao buscar produtos:', error);
     }
 }
 
@@ -161,14 +161,14 @@ async function realizarCompra() {
 
                 Swal.fire({
                     icon: 'success',
-                    title: 'ALERTA DE PREÇO',
-                    text: 'Produto Comprado com valor abaixo ou igual ao desejado!',
+                    title: 'ALERTA DE COMPRA:',
+                    text: 'Produto COMPRADO com valor ABAIXO ou IGUAL ao desejado!',
                     confirmButtonText: 'OK',
                 }).then((result) => {
                     result.isConfirmed
                     monitorando = false;
                     clearTimeout(intervalId);
-                    $("#start").text("Start").removeClass("btn-danger").addClass("btn-success");
+                    $("#start").text("Buscar").removeClass("btn-danger").addClass("btn-success");
                     usuarioCompras.push(produtoSelecionado);
                     localStorage.setItem('usuarioCompras', JSON.stringify(usuarioCompras));
                     window.location.href = "minhasCompras.html";
