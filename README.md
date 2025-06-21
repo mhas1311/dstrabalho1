@@ -1,6 +1,6 @@
 # 🛒 Entre. Acompanhe. Compre!
 
-Esta aplicação é integrada à plataforma **OdinLine**, feita para facilitar a vida do usuário que quer monitorar os preços de produtos e agir rapidamente quando o valor ideal aparecer — seja com uma notificação ou uma compra instantânea.
+Esta aplicação é integrada à plataforma **OdinLine**, feita para facilitar a vida do usuário que quer monitorar os preços de produtos e agir rapidamente quando o valor ideal aparecer, seja com uma notificação ou uma compra instantânea.
 
 ## 🔐 Acesso Restrito
 
