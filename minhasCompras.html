@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Compras</title>
+    <link type="text/css" rel="stylesheet" href="bootstrapCSS/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="bootstrapCSS/estilos.css" />
+</head>
+
+
+
+<header class="border-bottom border-dark bg-light text-dark p-3 mb-4 d-flex justify-content-between align-items-center">
+    <div class="justify-content-start">
+        <span class="border border-dark rounded p-2">
+            <a href="alertaPreco.html" class="text-decoration-none text-dark fw-bold">Alerta de Preço</a>
+        </span>
+        <!-- <span class="border border-dark rounded p-2 ms-3">
+            <a href="minhasCompras.html" class="text-decoration-none text-dark fw-bold">Minhas compras</a>
+        </span> -->
+
+    </div>
+
+    <div>
+        <span>
+            <a href="acesso.html"><button>Menu de Acesso</button></a>
+            <a href="index.html"><button>Sair</button></a>
+        </span>
+
+    </div>
+</header>
+
+<body class="d-flex flex-column min-vh-100" onload="carregar()">
+
+    <div class="container mt-1">
+        <h1 class="text-center f-1 border-bottom border-danger">Minhas Compras</h1>
+
+        <table class = "table table-striped mt-4" id="tabela">
+            <thead class = "table-light">
+                <tr>
+                    <th>Lista de Compra</th>
+                    <th>Valor de Compra</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <!-- PRODUTOS -->
+            <tbody> 
+              
+            </tbody>
+        </table>
+
+        <div id = "janelaFlutuante">
+            <h1 class = "text-center f-1 fw-bold border-bottom border-danger" ></h1>
+            <div class = "d-flex justify-content-center mt-4">
+                <img id="espacoImg" style="width: 0;" />
+            </div>
+            <div class = "d-flex justify-content-end mt-auto">
+                <button class="btn btn-danger" id="btnFechar" onclick="fecharJanelaFlutuante()">Fechar</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/4minhasCompras.js"></script>
+</body>
+
+
+
+<footer class="mt-auto">
+    <div class="border-top border-dark text-center bg-light text-dark p-3 mt-4">
+        <p>Projeto: Matheus Henrique Almeida Silva</p>
+        <p>&copy; 2025 - Todos os direitos reservados</p>
+    </div>
+</footer>
+</html>
+
+
+<!-- Smartphone Xiaomi POCO X7 Pro 5G 8+256GB/12+256GB/12+512GB -->

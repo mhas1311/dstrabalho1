@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autenticação</title>
+    <link type="text/css" rel="stylesheet" href="bootstrapCSS/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="bootstrapCSS/estilos.css" />
+    
+</head>
+
+
+<header class="border-bottom border-dark bg-light text-dark p-3 mb-4">
+    <h1 class="text-center fw-bold">Autenticação de Usuário</h1>
+
+</header>
+
+<body class = "d-flex flex-column min-vh-100" onload="carregar()">
+
+
+
+    <div class= "d-flex justify-content-center align-items-center mt-4">
+        <h6>É necessário que o Usuário já tenha se cadastrado no site: <a href="http://www.odiloncorrea.com/odinline">OdinLine</a></h6>
+    </div>
+
+    <div class= "d-flex justify-content-center align-items-center mt-4">
+        <p>
+            <img class= "d-flex justify-content-center align-items-center" src="imgs/logoAOdinLine.png" alt="" height="140px" width="200px">
+        </p>
+    
+    </div>
+    <br>
+    <div class="d-flex justify-content-center align-items-center">
+        <div class = "card p-4 shadow bg-light" style="max-width: 90%; width: 100%;">
+
+
+
+
+            <form action="#" id = "formulario">
+                <fieldset>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <h6><label for="login" class="form-label fw-bold">Login</label></h6>
+                            <input type="text" id="login" name="login" class="form-control" required>
+                        </div>
+                        <div class="col-md-6">
+                            <h6><label for="senha" class="form-label fw-bold">Senha</label></h6>
+                            <input type="password" id="senha" name="senha" class="form-control" required>
+                        </div>
+                        <div class="d-flex mt-5 justify-content-center">
+                            <button type="button" class="btn btn-success btn-sm text-light fw-bold" onclick="autenticar()">Entrar</button>
+
+                        </div>
+                    </div>
+
+
+
+                </fieldset>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    
+
+
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/1autenticacao.js"></script>
+</body>
+
+<footer class="mt-auto">
+    <div class="border-top border-dark text-center bg-light text-dark p-3 mt-4">
+        <p>Projeto: Matheus Henrique Almeida Silva</p>
+        <p>&copy; 2025 - Todos os direitos reservados</p>
+    </div>
+</footer>
+</html>
+
